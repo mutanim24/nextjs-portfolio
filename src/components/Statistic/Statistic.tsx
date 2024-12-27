@@ -23,16 +23,16 @@ const Statistic = () => {
 
     return (
         <div className="container mx-auto">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-4 md:gap-4">
                 {datas.map((data, index) => (
                     <div
                         key={index}
                         className="my-4 flex gap-3 items-center justify-center px-16"
                     >
-                        <div className="text-[60px] font-bold text-orange-600">
+                        <div className="text-5xl md:text-[60px] font-bold text-orange-600">
                             <CountUp end={data.number} duration={5} />
                         </div>
-                        <p>{data.text}</p>
+                        <p className='text-sm md:text-base'>{data.text}</p>
                     </div>
                 ))}
             </div>
