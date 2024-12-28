@@ -22,7 +22,7 @@ const Statistic = () => {
     ];
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto  mt-10 md:mt-0">
             <div className="grid md:grid-cols-4 md:gap-4">
                 {datas.map((data, index) => (
                     <div
